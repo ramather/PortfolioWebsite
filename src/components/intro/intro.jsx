@@ -11,13 +11,9 @@ const Intro = () => {
           <h1 className="i-name">Ross Mather</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              {/* <div className='i-title-item'>Web Developer</div>
-                            <div className='i-title-item'>Language Lover</div>
-                            <div className='i-title-item'>Travel Enthusiast</div>
-                            <div className='i-title-item'>Sci-Fi Fanatic</div>
-                            <div className='i-title-item'>Mediocre Chef</div> */}
+             
               <Typical
-                steps={["Language Lover", 1500, "Travel Enthusiast", 1500, "Sci-Fi Fanatic", 1500, "Mediocre Chef", 1500]}
+                steps={["Language Lover", 1500, "Travel Enthusiast", 1500, "Sci-Fi Fanatic", 1500, ]}
                 loop={Infinity}
                 wrapper="h3"
               />

@@ -1,31 +1,9 @@
 import { motion } from "framer-motion";
 import move from "lodash-move";
-import React, { useState, useEffect } from "react";
-import "./works.scss";
+import React from "react";
+import "./cards.scss";
+import { data } from "./data";
 
-const data = [
-  {
-    id: "1",
-    title: "LinkedUp",
-    desc: "liijfkdsa dsakdsa sak jfksanvvjdksa jkak jfjka fjkal hfjlka jfklda jfkla jkclad jfkdla jfkla jfkdla",
-    img: "./colors.jpg",
-    backgroundColor: "#747474",
-  },
-  {
-    id: "2",
-    title: "Macrolator",
-    desc: "liijfkdsa dsakdsa sak jfksanvvjdksa jkak jfjka fjkal hfjlka jfklda jfkla jkclad jfkdla jfkla jfkdla",
-    img: "./calculatorscreen.jpg",
-    backgroundColor: "#36a18b",
-  },
-  {
-    id: "3",
-    title: "pokegen",
-    desc: "liijfkdsa dsakdsa sak jfksanvvjdksa jkak jfjka fjkal hfjlka jfklda jfkla jkclad jfkdla jfkla jfkdla",
-    img: "./pokemon.jpg",
-    backgroundColor: "#cda35f",
-  },
-];
 const CARD_OFFSET = 10;
 const SCALE_FACTOR = 0.06;
 
@@ -49,7 +27,7 @@ export default function Cards() {
             animate={{
               top: index * -CARD_OFFSET,
               scale: 1 - index * SCALE_FACTOR,
-              zIndex: data.length - index,
+              zIndex: cards.length - index,
             }}
             drag={canDrag ? "y" : false}
             dragConstraints={{
@@ -60,10 +38,14 @@ export default function Cards() {
           >
             <div className="left">
               <div className="leftContainer">
-                <div className="imgContainer"></div>
                 <h2>{card.title}</h2>
                 <p>{card.desc}</p>
                 <span>Technology used</span>
+                <div className="technologies">
+                  {card.technologies.map((tech) => {
+                    return <i className={tech}></i>;
+                  })}
+                </div>
               </div>
             </div>
             <div className="right">

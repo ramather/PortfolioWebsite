@@ -1,8 +1,7 @@
 import "./works.scss";
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import move from "lodash-move";
-import Cards from "./cards";
+
+import Cards from "./cards/cards";
 
 
 export default function Works() {
