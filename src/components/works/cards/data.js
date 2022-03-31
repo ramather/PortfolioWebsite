@@ -3,11 +3,13 @@
       id: "1",
       title: "LinkedUp",
       desc: "Created a web parser using selenium and python. It logs into linkedin for you and searches for whatever jobs you want. It then goes to the jobs page and scrapes linked in for them and saves the data into a JSON file.",
-      img: "./colors.jpg",
-      backgroundColor: "#747474",
+      img: "./slitherSlither.jpg",
+      // backgroundColor: "#747474",
+      backgroundColor: '#cb7c7a',
       technologies: [
         "devicon-selenium-original colored",
         "devicon-python-plain-wordmark",
+        'devicon-vscode-plain-wordmark colored'
       ],
     },
     {
@@ -25,7 +27,7 @@
     {
       id: "3",
       title: "Pokegen",
-      desc: "I created this using the PokeAPI. You search for a pokemon and it generates a card using data from the API.",
+      desc: "I created this using the PokeAPI. You search for a pokemon and it generates a card using data from the API. It will change color based on the pokemon's type. Super fun to make. Learned how to us CSS grid in the process.",
       img: "./pokemon.jpg",
       backgroundColor: "#cda35f",
       technologies: [
@@ -35,4 +37,5 @@
         "devicon-sass-original colored",
       ],
     },
+    
   ];
