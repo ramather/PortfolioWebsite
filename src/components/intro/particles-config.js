@@ -2,7 +2,7 @@ const particlesConfig = {
   "autoPlay": true,
   "background": {
     "color": {
-      "value": "#17163e"
+      "value": "#000"
     },
     "image": "",
     "position": "",
@@ -42,7 +42,7 @@ const particlesConfig = {
       },
       "onHover": {
         "enable": true,
-        "mode": "light",
+        "mode": "trail",
         "parallax": {
           "enable": false,
           "force": 2,
@@ -87,17 +87,17 @@ const particlesConfig = {
         "area": {
           "gradient": {
             "start": {
-              "value": "3b5e98"
+              "value": "#ffffff"
             },
             "stop": {
-              "value": "#17163e"
+              "value": "#000000"
             }
           },
           "radius": 1000
         },
         "shadow": {
           "color": {
-            "value": "#17163e"
+            "value": "#000000"
           },
           "length": 2000
         }
@@ -123,9 +123,42 @@ const particlesConfig = {
         "radius": 200
       },
       "trail": {
-        "delay": 1,
-        "pauseOnStop": false,
-        "quantity": 1
+        "delay": 0.005,
+        "pauseOnStop": true,
+        "quantity": 5,
+        "particles": {
+          "color": {
+            "value": "#ff0000",
+            "animation": {
+              "enable": true,
+              "speed": 400,
+              "sync": true
+            }
+          },
+          "collisions": {
+            "enable": false
+          },
+          "links": {
+            "enable": false
+          },
+          "move": {
+            "outModes": {
+              "default": "destroy"
+            },
+            "speed": 2
+          },
+          "size": {
+            "value": 5,
+            "animation": {
+              "enable": true,
+              "speed": 5,
+              "minimumValue": 1,
+              "sync": true,
+              "startValue": "min",
+              "destroy": "max"
+            }
+          }
+        }
       }
     }
   },
@@ -171,7 +204,7 @@ const particlesConfig = {
           "value": 1
         }
       },
-      "enable": false,
+      "enable": true,
       "mode": "bounce",
       "overlap": {
         "enable": true,
@@ -185,8 +218,8 @@ const particlesConfig = {
           "count": 0,
           "enable": true,
           "offset": 0,
-          "speed": 20,
-          "sync": true
+          "speed": 50,
+          "sync": false
         },
         "s": {
           "count": 0,
@@ -314,11 +347,11 @@ const particlesConfig = {
     "links": {
       "blink": false,
       "color": {
-        "value": "#fff"
+        "value": "random"
       },
       "consent": false,
       "distance": 100,
-      "enable": false,
+      "enable": true,
       "frequency": 1,
       "opacity": 1,
       "shadow": {
@@ -380,7 +413,7 @@ const particlesConfig = {
       },
       "random": false,
       "size": false,
-      "speed": 6,
+      "speed": 2,
       "spin": {
         "acceleration": 0,
         "enable": false
@@ -403,21 +436,25 @@ const particlesConfig = {
         "factor": 1000
       },
       "limit": 0,
-      "value": 30
+      "value": 100
     },
     "opacity": {
       "random": {
-        "enable": false,
-        "minimumValue": 0.1
+        "enable": true,
+        "minimumValue": 0.3
       },
-      "value": 1,
+      "value": {
+        "min": 0.3,
+        "max": 0.8
+      },
       "animation": {
         "count": 0,
-        "enable": false,
-        "speed": 2,
+        "enable": true,
+        "speed": 0.5,
         "sync": false,
         "destroy": "none",
-        "startValue": "random"
+        "startValue": "random",
+        "minimumValue": 0.3
       }
     },
     "orbit": {
@@ -471,8 +508,8 @@ const particlesConfig = {
       },
       "value": 0,
       "animation": {
-        "enable": true,
-        "speed": 5,
+        "enable": false,
+        "speed": 0,
         "sync": false
       },
       "direction": "clockwise",
@@ -491,27 +528,25 @@ const particlesConfig = {
     },
     "shape": {
       "options": {},
-      "type": [
-        "circle",
-        "square"
-      ]
+      "type": "circle"
     },
     "size": {
       "random": {
         "enable": true,
-        "minimumValue": 15
+        "minimumValue": 1
       },
       "value": {
-        "min": 15,
-        "max": 30
+        "min": 1,
+        "max": 3
       },
       "animation": {
         "count": 0,
-        "enable": false,
-        "speed": 5,
+        "enable": true,
+        "speed": 3,
         "sync": false,
         "destroy": "none",
-        "startValue": "random"
+        "startValue": "random",
+        "minimumValue": 1
       }
     },
     "stroke": {
