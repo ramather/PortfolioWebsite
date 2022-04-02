@@ -1,8 +1,8 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import Intro from "./components/intro/intro";
 import Works from "./components/works/Works";
 import Contact from "./components/contact/Contact";
 import "./global.scss";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <Intro />
         <Works />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
+import Button from "./buttons/Button";
 import "./intro.scss";
 import ParticleBackground from "./ParticleBackgroud";
 const Intro = () => {
@@ -34,11 +35,10 @@ const Intro = () => {
             related to technology. Lately I have been immersing myself in the world of Javascript.
             When I am not at my computer I am usually watching horror movies or running.
           </div>
+          <Button/>
         </div>
       </div>
-      {/* <div className="i-right">
-        <div className="i-shape"></div>
-      </div> */}
+    
     </div>
   );
 };
