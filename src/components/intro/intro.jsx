@@ -3,6 +3,7 @@ import Typical from "react-typical";
 import Button from "./buttons/Button";
 import "./intro.scss";
 import ParticleBackground from "./ParticleBackgroud";
+
 const Intro = () => {
   return (
     <div className="i">
@@ -31,9 +32,7 @@ const Intro = () => {
 
           <div className="i-desc">
             <br/>
-            I am a Software Engineer from Cincinnati, Ohio. I love all things
-            related to technology. Lately I have been immersing myself in the world of Javascript.
-            When I am not at my computer I am usually watching horror movies or running.
+         
           </div>
           <Button/>
         </div>
