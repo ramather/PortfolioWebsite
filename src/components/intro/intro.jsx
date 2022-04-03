@@ -7,7 +7,7 @@ import ParticleBackground from "./ParticleBackgroud";
 const Intro = () => {
   return (
     <div className="i">
-         <ParticleBackground></ParticleBackground>
+      <ParticleBackground></ParticleBackground>
 
       <div className="i-left">
         <div className="i-left-wrapper">
@@ -31,13 +31,11 @@ const Intro = () => {
           </div>
 
           <div className="i-desc">
-            <br/>
-         
+            <br />
           </div>
-          <Button/>
+          <Button />
         </div>
       </div>
-    
     </div>
   );
 };

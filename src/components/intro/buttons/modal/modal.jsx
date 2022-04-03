@@ -30,10 +30,11 @@ const Modal = ({ handleClose, text }) => {
         variants={dropIn}
         initial="hidden"
         animate="visible"
+        drag
       >
         <div className="card">
-          <p>
-            {" "}
+          <p style={{marginBottom: "30px"}}>
+            
             I am a Software Engineer from Cincinnati, Ohio. I love all things
             related to technology. Lately I have been immersing myself in the
             world of Javascript. When I am not at my computer I am usually
