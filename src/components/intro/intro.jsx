@@ -7,7 +7,6 @@ import ParticleBackground from "./ParticleBackgroud";
 const Intro = () => {
   return (
     <div className="i">
-      <ParticleBackground></ParticleBackground>
 
       <div className="i-left">
         <div className="i-left-wrapper">
