@@ -6,7 +6,7 @@
     // width: 100vh;
   background-size: 400% 400%;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 
 }
 /* makes it so that 50% of the component on left 50 on right */
@@ -18,14 +18,7 @@
     text-align: center;
     
 }
-.i-right{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* position: relative; */
 
-}
 .i-left-wrapper{
     padding: 50px;
     height: 50%;
