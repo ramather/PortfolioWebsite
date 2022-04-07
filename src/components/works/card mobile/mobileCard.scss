@@ -31,17 +31,23 @@
     // margin-bottom: 100px;
   }
 
+  .container {
+    width: 90%;
+    height: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .c-card {
-    background-color: red;
+    // background-color: red;
     width: 86%;
     height: 90%;
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     background-size: contain;
   }
-
-  
 }
