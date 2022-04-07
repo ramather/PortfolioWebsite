@@ -1,0 +1,47 @@
+.c {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  // background: #151515;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+
+  .title {
+    position: relative;
+    // top: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-image: linear-gradient(
+      90deg,
+      #12c2e9 0%,
+      #c471ed 50%,
+      #f64f59 100%
+    );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // margin-top: -100px;
+    // margin-bottom: 100px;
+  }
+
+  .c-card {
+    background-color: red;
+    width: 86%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-size: contain;
+  }
+
+  
+}

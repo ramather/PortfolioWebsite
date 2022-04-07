@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app">
       <div>
-<ParticleBackground params={particlesConfig}></ParticleBackground>
+        <ParticleBackground params={particlesConfig}></ParticleBackground>
         <Intro />
         <Works />
         <Contact />
