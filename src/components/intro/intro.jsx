@@ -6,10 +6,8 @@ import ParticleBackground from "./ParticleBackgroud";
 
 const Intro = () => {
   return (
-    <div className="i">
 
-      <div className="i-left">
-        <div className="i-left-wrapper">
+        <div className="i">
           <h2 className="i-intro">Hey!</h2>
           <h1 className="i-name">I'm Ross</h1>
           <div className="i-title">
@@ -34,8 +32,6 @@ const Intro = () => {
           </div>
           <Button />
         </div>
-      </div>
-    </div>
   );
 };
 

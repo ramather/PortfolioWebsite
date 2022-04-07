@@ -1,31 +1,16 @@
 @import '../../global.scss';
 
-.i{
-    display: flex;
-    height: 100vh;
-    // width: 100vh;
-  background-size: 400% 400%;
-  position: relative;
-  overflow: auto;
 
-}
 /* makes it so that 50% of the component on left 50 on right */
-.i-left{
-    flex: 1.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-}
 
-.i-left-wrapper{
-    padding: 50px;
-    height: 50%;
+
+.i{
+    // padding: 50px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    color: #feda4a;    
+    align-items: center;
+    justify-content: center;    color: #feda4a;    
 }
 
 @include mobile{
@@ -35,17 +20,17 @@
 .i-intro{
 
   @include mobile{
-    font-size: 4rem;
+    font-size: 3rem;
 
   }
 
   font-size: 6rem;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .i-name{
   @include mobile{
-    font-size: 4rem;
+    font-size: 3rem;
 
   }
   font-size: 6rem;
