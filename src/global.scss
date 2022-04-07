@@ -7,3 +7,7 @@ $width: 768px;
         @content
     }
 }
+
+html,body{
+    overflow-x: hidden;
+}
