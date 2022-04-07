@@ -21,7 +21,7 @@ export default function Cards() {
           <motion.li
             style={{
               backgroundColor: card.backgroundColor,
-              cursor: canDrag ? "grab" : "auto",
+              // cursor: canDrag ? "grab" : "auto",
             }}
             className="item"
             animate={{

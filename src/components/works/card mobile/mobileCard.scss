@@ -27,13 +27,15 @@
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
     // margin-top: -100px;
     // margin-bottom: 100px;
   }
 
   .container {
-    width: 90%;
-    height: 92%;
+    position: relative;
+    width: 100vw;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,13 +43,15 @@
 
   .c-card {
     // background-color: red;
-    width: 86%;
+    width: 66%;
     height: 90%;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    background-size: contain;
+    transform-origin: top center;
+    list-style: none;
+    // background-size: contain;
   }
 }

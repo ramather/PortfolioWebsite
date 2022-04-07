@@ -21,13 +21,11 @@ function MobileCard() {
 
       <ul className="container">
         {cards.map((card, index) => {
-          const canDrag = index === 0;
           return (
             <motion.li
               className="c-card"
               style={{
                 backgroundColor: card.backgroundColor,
-                cursor: canDrag ? "grab" : "auto",
               }}
 
               animate={{
@@ -35,16 +33,12 @@ function MobileCard() {
                 scale: 1 - index * SCALE_FACTOR,
                 zIndex: cards.length - index,
               }}
-              drag={canDrag ? "y" : false}
-              dragConstraints={{
-                top: 0,
-                bottom: 0,
-              }}
-              onDragEnd={() => moveToEnd(index)}
+              
             ></motion.li>
           );
         })}
       </ul>
+      <button onClick={()=> moveToEnd(0)}>Next</button>
     </div>
   );
 };
