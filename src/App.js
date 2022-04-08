@@ -13,8 +13,8 @@ function App() {
         <ParticleBackground params={particlesConfig}></ParticleBackground>
         <Intro />
         <Works />
-        <Contact />
-        {/* <Footer /> */}
+        {/* <Contact /> */}
+        <Footer />
       </div>
     </div>
   );
