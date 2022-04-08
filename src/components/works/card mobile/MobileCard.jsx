@@ -47,8 +47,19 @@ function MobileCard() {
              <h3>{card.title}</h3>
              <img src={card.img}></img>   
              <div className="tech">
-                 {}
+                 {card.technologies.map((tech)=>{
+                                         return <i className={tech}></i>;
+
+                 })}
              </div>
+             <p>{card.desc}</p>
+
+             <div className="buttons"> 
+                   <button className="bn5"> Git Repo </button >
+                  <button className="bn5"> Link to Site </button > 
+
+              </div> 
+
             </motion.li>
           );
         })}

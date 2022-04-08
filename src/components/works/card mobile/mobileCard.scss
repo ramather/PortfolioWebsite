@@ -48,7 +48,7 @@
     height: 95%;
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-radius: 20px;
     transform-origin: top center;
@@ -56,6 +56,14 @@
     flex-direction: column;
     img{
         height: 120px;
+
+    }
+    p{
+        font-size: small;
+        background-color: #f5f5dcb5;
+        border-radius: 10px;
+        padding: 4px;
+        margin: 5px;
 
     }
 
