@@ -44,7 +44,7 @@
 
   .c-card {
     // background-color: red;
-    width: 66%;
+    width: 76%;
     height: 95%;
     position: absolute;
     display: flex;
@@ -55,7 +55,8 @@
     list-style: none;
     flex-direction: column;
     img{
-        height: 120px;
+        // height: 145px;
+        width: 90%;
 
     }
     p{
@@ -64,6 +65,10 @@
         border-radius: 10px;
         padding: 4px;
         margin: 5px;
+
+    }
+    .buttons{
+        justify-content: space-around;
 
     }
 
