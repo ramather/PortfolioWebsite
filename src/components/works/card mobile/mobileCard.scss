@@ -57,6 +57,8 @@
     img{
         // height: 145px;
         width: 90%;
+        border: 5px solid white;
+        border-radius: 2px;
 
     }
     h4{
@@ -73,7 +75,10 @@
     }
     .buttons{
         justify-content: space-around;
-
+        
+        button{
+            margin: 5px;
+        }
     }
 
     .tech {
