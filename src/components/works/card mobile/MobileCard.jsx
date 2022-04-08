@@ -10,6 +10,7 @@ const SCALE_FACTOR = 0.06;
 
 function MobileCard() {
   const [cards, setCards] = useState(data);
+  const [wobble, setWobble] = useState(false)
   const moveToEnd = (from) => {
     setCards(move(cards, from, cards.length - 1));
   };
@@ -22,7 +23,7 @@ function MobileCard() {
       x: 100,
       transition: { delay: i * 0.3 },
     }));
-  }, [cards]);
+  }, []);
 
   return (
     <div className="c">
@@ -40,9 +41,15 @@ function MobileCard() {
                 top: index * -CARD_OFFSET,
                 scale: 1 - index * SCALE_FACTOR,
                 zIndex: cards.length - index,
-                controls
+                
               }}
-            ></motion.li>
+            >
+             <h3>{card.title}</h3>
+             <img src={card.img}></img>   
+             <div className="tech">
+                 {}
+             </div>
+            </motion.li>
           );
         })}
       </ul>
