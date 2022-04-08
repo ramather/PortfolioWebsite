@@ -44,7 +44,7 @@ function MobileCard() {
                 
               }}
             >
-             <h3>{card.title}</h3>
+             <h1>{card.title}</h1>
              <img src={card.img}></img>   
              <h4>Technology used</h4>
              <div className="tech">
