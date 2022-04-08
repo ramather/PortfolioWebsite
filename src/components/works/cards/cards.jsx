@@ -50,11 +50,10 @@ export default function Cards() {
             </div>
             <div className="right">
               <img src={card.img} />
-              <div className="buttons"> 
-                   <button className="bn5"> Git Repo </button >
-                  <button className="bn5"> Link to Site </button > 
-
-              </div> 
+              <div className="buttons">
+                <button className="bn5"> Git Repo </button>
+                <button className="bn5"> Link to Site </button>
+              </div>
             </div>
           </motion.li>
         );
