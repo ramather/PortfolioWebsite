@@ -1,12 +1,15 @@
 import "./footer.scss";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="contact">
         <h1>CONTACT ME</h1>
-        <button>Let's talk</button>
+        <form action="mailto:ramather96@gmail.com" method="get" target="_blank">
+
+        <button href>Let's talk</button>
+        </form>
       </div>
       <div className="links">
         <div className="technologies">
