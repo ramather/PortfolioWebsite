@@ -1,18 +1,5 @@
 export const data = [
-  {
-    id: "1",
-    title: "LinkedUp",
-    desc: "Created a web parser using selenium and python. It logs into linkedin for you and searches for whatever jobs you want. It then goes to the jobs page and scrapes linked in for them and saves the data into a JSON file.",
-    img: "./slitherSlither.jpg",
-    backgroundColor: "#cb7c7a",
-    technologies: [
-      "devicon-selenium-original colored",
-      "devicon-python-plain-wordmark",
-      "devicon-vscode-plain-wordmark colored",
-    ],
-    git: "https://github.com/ramather/Selenium-LInkedIn-WebCrawler",
-    link: "https://github.com/ramather/LinkedUp",
-  },
+
   {
     id: "2",
     title: "Macrolator",
@@ -41,5 +28,19 @@ export const data = [
     ],
     git: "https://github.com/ramather/pokemon-fun",
     link: "https://blissful-hopper-f34929.netlify.app/",
+  },
+  {
+    id: "1",
+    title: "LinkedUp",
+    desc: "Created a web parser using selenium and python. It logs into linkedin for you and searches for whatever jobs you want. It then goes to the jobs page and scrapes linked in for them and saves the data into a JSON file.",
+    img: "./slitherSlither.jpg",
+    backgroundColor: "#cb7c7a",
+    technologies: [
+      "devicon-selenium-original colored",
+      "devicon-python-plain-wordmark",
+      "devicon-vscode-plain-wordmark colored",
+    ],
+    git: "https://github.com/ramather/Selenium-LInkedIn-WebCrawler",
+    link: "https://github.com/ramather/LinkedUp",
   },
 ];
