@@ -10,7 +10,7 @@ const SCALE_FACTOR = 0.06;
 
 function MobileCard() {
   const [cards, setCards] = useState(data);
-  const [wobble, setWobble] = useState(false)
+  const [wobble, setWobble] = useState(false);
   const moveToEnd = (from) => {
     setCards(move(cards, from, cards.length - 1));
   };
@@ -41,26 +41,29 @@ function MobileCard() {
                 top: index * -CARD_OFFSET,
                 scale: 1 - index * SCALE_FACTOR,
                 zIndex: cards.length - index,
-                
               }}
             >
-             <h1>{card.title}</h1>
-             <img src={card.img}></img>   
-             <h4>Technology used</h4>
-             <div className="tech">
-                 {card.technologies.map((tech)=>{
-                                         return <i className={tech}></i>;
+              <h1>{card.title}</h1>
+              <img src={card.img}></img>
+              <h4>Technology used</h4>
+              <div className="tech">
+                {card.technologies.map((tech) => {
+                  return <i className={tech}></i>;
+                })}
+              </div>
+              <p>{card.desc}</p>
 
-                 })}
-             </div>
-             <p>{card.desc}</p>
-
-             <div className="buttons"> 
-                   <button className="bn5"> Git Repo </button >
-                  <button className="bn5"> Link to Site </button > 
-
-              </div> 
-
+              <div className="buttons">
+                <form action={card.git} method="get" target="_blank">
+                  <button type="submit" className="bn5">
+                    {" "}
+                    Git Repo{" "}
+                  </button>
+                </form>
+                <form action={card.link} method="get" target="_blank">
+                  <button className="bn5"> Link to Site </button>
+                </form>
+              </div>
             </motion.li>
           );
         })}

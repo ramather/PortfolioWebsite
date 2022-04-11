@@ -51,8 +51,15 @@ export default function Cards() {
             <div className="right">
               <img src={card.img} />
               <div className="buttons">
-                <button className="bn5"> Git Repo </button>
-                <button className="bn5"> Link to Site </button>
+                <form action={card.git} method="get" target="_blank">
+                  <button type="submit" className="bn5">
+                    {" "}
+                    Git Repo{" "}
+                  </button>
+                </form>
+                <form action={card.link} method="get" target="_blank">
+                  <button className="bn5"> Link to Site </button>
+                </form>
               </div>
             </div>
           </motion.li>
